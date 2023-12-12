@@ -4,8 +4,8 @@ function solution(myString) {
         if(myString[i] === 'a') {
             result += myString[i].toUpperCase()
            
-        } else if(myString[i] !== 'A') {
-             result += myString[i].toLowerCase()
+        }  else if(myString[i] !== 'A') {
+            result += myString[i].toLowerCase();
         } else {
             result += myString[i]
         }
