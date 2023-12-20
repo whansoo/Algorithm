@@ -1,11 +1,21 @@
 function solution(arr, queries) {
-    return queries.reduce((acc, cur) => {
-        const [from, to] = cur
-        for(let i = from ; i <= to ; i ++) {
-            acc[i]+=1
+      
+
+    for (const [ start, end ] of queries) {
+        for (let i = start; i <= end; i += 1) {
+            arr[i] += 1;
         }
-        return acc
-    }, arr)
+    }
+
+    return arr;
+    // return queries.reduce((acc, cur) => {
+    //     const [from, to] = cur
+    //     console.log(acc)
+    //     for(let i = from ; i <= to ; i ++) {
+    //         acc[i]+=1
+    //     }
+    //     return acc
+    // }, arr)
 }
 
 // function solution(arr, queries) {
